@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+}
+
+ext{
+    mainClassName = 'Application'
+}
+
+group 'ru.mail'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+task application(type: JavaExec) {
+    group
+    main = mainClassName
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+dependencies {
+    implementation project(':models')
+}

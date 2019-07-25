@@ -1,0 +1,25 @@
+{
+  "libraryMap": [
+    {
+      "Author": {
+        "Name": "Petya",
+        "Surname": "Vasechkin"
+      },
+      "BookName": "Book1"
+    },
+    {
+      "Author": {
+        "Name": "Petya2",
+        "Surname": "Vasechkin2"
+      },
+      "BookName": "Book2"
+    },
+    {
+      "Author": {
+        "Name": "Petya2",
+        "Surname": "Vasechkin2"
+      },
+      "BookName": "Book3"
+    }
+  ]
+}
