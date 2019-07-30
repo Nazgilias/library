@@ -3,6 +3,6 @@ import lombok.Data;
 import java.util.HashSet;
 
 @Data
-public class Library {
-  HashSet<Book> libraryMap;
+public final class Library {
+  private final HashSet<Book> libraryMap;
 }

@@ -2,7 +2,9 @@ import java.io.FileNotFoundException;
 import java.util.HashMap;
 import java.util.Scanner;
 
-public class Application {
+@SuppressWarnings("UseOfSystemOutOrSystemErr")
+public enum Application {
+  ;
   private static final LibraryFactory libraryFactory = new LibraryFactory();
 
   public static void main(String[] args) throws FileNotFoundException {
@@ -11,12 +13,12 @@ public class Application {
   }
 
   public static HashMap<String, String> getName() {
-    HashMap author = new HashMap<>();
     System.out.println("Enter Author Name");
     final Scanner scanner = new Scanner(System.in);
     final String authorName = scanner.nextLine();
     System.out.println("Enter Author Surname");
     final String authorSurname = scanner.nextLine();
+    final HashMap<String, String> author = new HashMap<>();
     author.put(authorName, authorSurname);
 
 

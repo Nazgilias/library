@@ -1,8 +1,7 @@
 import lombok.Data;
 
 @Data
-public class Book {
-
+public final class Book {
   private final Author Author;
   private final String BookName;
 
